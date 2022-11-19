@@ -29,7 +29,6 @@ public class UserServiceImpl implements UserDetailsService, UserService {
         return userRepository.findById(id).orElse(null);
     }
 
-    @Transactional
     public List<User> findAll() {
         return userRepository.findAll();
     }

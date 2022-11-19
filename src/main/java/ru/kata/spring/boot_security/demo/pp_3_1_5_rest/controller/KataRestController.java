@@ -12,14 +12,14 @@ import ru.kata.spring.boot_security.demo.pp_3_1_5_rest.service.UserService;
 import java.util.List;
 import java.util.Set;
 
-@org.springframework.web.bind.annotation.RestController
+@RestController
 @RequestMapping("/api")
-public class RestController {
+public class KataRestController {
 
     private final UserService userService;
     private final RoleService roleService;
 
-    public RestController(UserService userService, RoleService roleService) {
+    public KataRestController(UserService userService, RoleService roleService) {
         this.userService = userService;
         this.roleService = roleService;
     }
