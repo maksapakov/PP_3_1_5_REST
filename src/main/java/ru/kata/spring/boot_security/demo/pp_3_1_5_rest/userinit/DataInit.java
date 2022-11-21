@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import ru.kata.spring.boot_security.demo.pp_3_1_5_rest.model.Role;
 import ru.kata.spring.boot_security.demo.pp_3_1_5_rest.model.User;
+import ru.kata.spring.boot_security.demo.pp_3_1_5_rest.service.RoleService;
 import ru.kata.spring.boot_security.demo.pp_3_1_5_rest.service.RoleServiceImpl;
+import ru.kata.spring.boot_security.demo.pp_3_1_5_rest.service.UserService;
 import ru.kata.spring.boot_security.demo.pp_3_1_5_rest.service.UserServiceImpl;
 
 import javax.annotation.PostConstruct;
