@@ -24,7 +24,6 @@ public class UserServiceImpl implements UserDetailsService, UserService {
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
 
-    @Transactional
     public User findById(Long id) {
         return userRepository.findById(id).orElse(null);
     }
